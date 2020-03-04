@@ -51,7 +51,7 @@ styling more complex sections - e.g header, blocks, sections
 # 06 UTILITIES
 e.g hacks or ie11 styles
 --------------------------------------------------------------*/
-@import url('../../../wp-includes/css/dist/block-library/style.min.css');
+@import url('block-library.min.css');
 /* @import url('theme/06-utilities/utilities.display.css'); */
 /* @import url('theme/06-utilities/utilities.typography.css'); */
 /* @import url('theme/06-utilities/utilitites.img.css'); */
