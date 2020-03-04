@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# BODY LAYOUT
+--------------------------------------------------------------*/
+
+.body--sticky-footer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body--sticky-footer .main {
+    flex-grow: 1;
+}
+
+/*--------------------------------------------------------------
+# GLOBAL CLASSES
+--------------------------------------------------------------*/
+.hidden {
+    display: none;
+}
+
+/*--------------------------------------------------------------
+# DESCRIPTION Margin between html tags
+--------------------------------------------------------------*/
+.description > *:not(:first-child) {
+    margin-top: var(--gutter-description);
+}

@@ -1,0 +1,69 @@
+/*--------------------------------------------------------------
+# 00 SETTINGS
+--------------------------------------------------------------*/
+@import url('theme/00-settings/settings.variables.css');
+/*@import url('theme/00-settings/settings.fonts.css');*/
+
+/*--------------------------------------------------------------
+# 01 TOOLS - generate variables
+--------------------------------------------------------------*/
+@import url('phucstrap/01-tools/tools.modularscale.css');
+
+/*--------------------------------------------------------------
+# 02 GENERIC - normalize
+--------------------------------------------------------------*/
+@import url('phucstrap/02-generic/generic.normalize.css');
+@import url('phucstrap/02-generic/generic.custom.css');
+
+/*--------------------------------------------------------------
+# 03 ELEMENTS
+styling elements without classes
+--------------------------------------------------------------*/
+@import url('phucstrap/03-elements/element.headings.css');
+@import url('theme/03-elements/element.form.css');
+
+/*--------------------------------------------------------------
+# 04 OBJECTS - molecules
+styling elements with classes - e.g global classes
+--------------------------------------------------------------*/
+@import url('phucstrap/04-objects/object.body.css');
+@import url('theme/04-objects/object.functional.css');
+
+
+/* @import url('theme/04-objects/object.typography.css'); */
+/* @import url('theme/04-objects/object.boxmodel.css'); */
+/* @import url('theme/04-objects/object.body.css'); */
+/* @import url('theme/04-objects/object.grid.css'); */
+/* @import url('theme/04-objects/object.burger.css'); */
+
+
+/*--------------------------------------------------------------
+# 05 COMPONENTS - organisms
+styling more complex sections - e.g header, blocks, sections
+--------------------------------------------------------------*/
+
+@import url('theme/05-components/component.header.css');
+@import url('theme/05-components/component.footer.css');
+@import url('theme/05-components/component.nav.css');
+@import url('theme/05-components/component.blocks.css');
+
+/*--------------------------------------------------------------
+# 06 UTILITIES
+e.g hacks or ie11 styles
+--------------------------------------------------------------*/
+@import url('../../../wp-includes/css/dist/block-library/style.min.css');
+/* @import url('theme/06-utilities/utilities.display.css'); */
+/* @import url('theme/06-utilities/utilities.typography.css'); */
+/* @import url('theme/06-utilities/utilitites.img.css'); */
+@import url('theme/06-utilities/utility.wordpress.css');
+/* @import url('theme/06-utilities/utilities.colors.css'); */
+
+
+.swup-enabled .transition-fade {
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }

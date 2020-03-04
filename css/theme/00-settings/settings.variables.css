@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+# LAYOUT
+--------------------------------------------------------------*/
+:root {
+    --gutter: .8rem;
+    --gutter-description: var(--font-size);
+
+    --max-width: 58em;
+    --max-width-2: 46em;
+    --max-width-3: 30em;
+}
+
+/*--------------------------------------------------------------
+# COLORS
+--------------------------------------------------------------*/
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+
+    --color-1: #ffdf00;
+    --color-2: #575756;
+    --color-3: #ededed;
+
+    --color-4: #624096;
+    --color-5: #4da1ff;
+}
+
+/*--------------------------------------------------------------
+# FONT
+--------------------------------------------------------------*/
+:root {
+    /* Font Family */
+    --font-family: 'Hind', sans-serif;
+    --font-family-2: 'Open Sans', sans-serif;
+
+    /* Modular Scale */
+    --font-size: calc(1.2rem + 0.698vw);
+    --font-size-ratio: 1.25;
+    --line-height: 1.25;
+
+    /* Line Height */
+    --line-height-0: var(--line-height);
+    --line-height-1: var(--line-height);
+    --line-height-2: var(--line-height);
+    --line-height-3: var(--line-height);
+    --line-height-4: var(--line-height);
+    --line-height-5: var(--line-height);
+    --line-height-6: var(--line-height);
+    --line-height-7: var(--line-height);
+}
+
+@media (min-width:64em) {
+  :root {
+    --font-size-ratio: 1.333;
+  }
+}
+
+/*--------------------------------------------------------------
+# ANIMATION
+--------------------------------------------------------------*/
+:root {
+    --transition-time: .3s;
+    --transition-style : ease-in-out;
+}

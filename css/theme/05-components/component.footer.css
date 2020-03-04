@@ -1,0 +1,13 @@
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+.footer {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+}
+

@@ -1,0 +1,44 @@
+/* DEFAULT EDITOR SETTINGS */
+.edit-post-visual-editor .block-editor-block-list__block {
+    margin-left: initial;
+    margin-right: initial;
+}
+
+.wp-block {
+    max-width: none;
+}
+
+
+/* CUSTOM GUTENBERG STYLE */
+
+/* media object */
+.is-style-mediaobject.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+/* media object reverse */
+.is-style-mediaobject-reverse.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    direction: rtl
+}
+
+/* media object reverse */
+.is-style-mediaobject-reverse.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout > * {
+    direction: ltr;
+}
+
+
+/* hero */
+.is-style-hero.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
+    display: grid;
+}
+
+.is-style-hero.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout > * {
+    grid-column: -1 / 1;
+    grid-row: -1 / 1;
+}
+

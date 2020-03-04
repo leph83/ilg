@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------
+# HEADER
+--------------------------------------------------------------*/
+.header {
+  background-color: var(--color-1);
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+}
+
+.header__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: calc(var(--gutter) * 4);
+  padding-bottom: calc(var(--gutter) * 4);
+}
+
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header__item--logo {
+  display: flex;
+  align-items: center;
+  margin-left: calc(var(--gutter) * -1);
+  margin-bottom: calc(var(--gutter) * -1);
+
+  flex-grow: 1;
+}
+
+.header__item--logo > * {
+  margin-left: var(--gutter);
+  margin-bottom: var(--gutter);
+}

@@ -1,0 +1,8 @@
+# ignore node dependency directories
+node_modules/
+prepros.config
+package-lock.json
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite

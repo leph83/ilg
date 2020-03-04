@@ -1,0 +1,43 @@
+/*--------------------------------------------------------------
+# NAV
+--------------------------------------------------------------*/
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav--primary {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--gutter) * -1);
+    margin-bottom: calc(var(--gutter) * -1);
+}
+
+/*--------------------------------------------------------------
+# NAV PRIMARY
+--------------------------------------------------------------*/
+.nav--primary .nav__item {
+    margin-left: var(--gutter);
+    margin-bottom: var(--gutter);
+}
+
+/*--------------------------------------------------------------
+# NAV FOOTER
+--------------------------------------------------------------*/
+.nav--footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--gutter) * -1);
+    margin-bottom: calc(var(--gutter) * -1);
+}
+
+.nav--footer .nav__item {
+    margin-left: var(--gutter);
+    margin-bottom: var(--gutter);
+}

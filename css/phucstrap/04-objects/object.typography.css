@@ -1,0 +1,116 @@
+/*--------------------------------------------------------------
+# FONT SIZES
+--------------------------------------------------------------*/
+.h0 {
+    font-size: var(--font-size-0);
+    line-height: var(--line-height-0);
+}
+
+.h1 {
+    font-size: var(--font-size-1);
+    line-height: var(--line-height-1);
+}
+
+.h2 {
+    font-size: var(--font-size-2);
+    line-height: var(--line-height-2);
+}
+
+.h3 {
+    font-size: var(--font-size-3);
+    line-height: var(--line-height-3);
+}
+
+.h4 {
+    font-size: var(--font-size-4);
+    line-height: var(--line-height-4);
+}
+
+.h5 {
+    font-size: var(--font-size-5);
+    line-height: var(--line-height-5);
+}
+
+.h6 {
+    font-size: var(--font-size-6);
+    line-height: var(--line-height-6);
+}
+
+.h7 {
+    font-size: var(--font-size-7);
+    line-height: var(--line-height-7);
+}
+
+.h8 {
+    font-size: var(--font-size-8);
+    line-height: var(--line-height-8);
+}
+
+.h9 {
+    font-size: var(--font-size-9);
+    line-height: var(--line-height-9);
+}
+
+
+/*--------------------------------------------------------------
+# FONT FAMILY
+--------------------------------------------------------------*/
+.font-family {
+    font-family: var(--font-family, sans-serif);
+}
+
+.font-family-2 {
+    font-family: var(--font-family-2, sans-serif);
+}
+
+.font-family-3 {
+    font-family: var(--font-family-3, sans-serif);
+}
+
+
+
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	clip-path: none;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000;
+	/* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}

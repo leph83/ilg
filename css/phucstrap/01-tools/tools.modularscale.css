@@ -1,0 +1,18 @@
+/*------------------------------------*\
+    $MODULAR SCALE
+\*------------------------------------*/
+:root {
+    --font-size-7: var(--font-size, calc(.8rem + 1vw));
+    --font-size-7: var(--font-size);
+    /* smaller font size */
+    --font-size-8: calc( var(--font-size-7) / var(--font-size-ratio, 1.25) );
+    --font-size-9: calc( var(--font-size-8) / var(--font-size-ratio, 1.25) );
+    /* bigger font size */
+    --font-size-6: calc( var(--font-size-7) * var(--font-size-ratio, 1.25) );
+    --font-size-5: calc( var(--font-size-6) * var(--font-size-ratio, 1.25) );
+    --font-size-4: calc( var(--font-size-5) * var(--font-size-ratio, 1.25) );
+    --font-size-3: calc( var(--font-size-4) * var(--font-size-ratio, 1.25) );
+    --font-size-2: calc( var(--font-size-3) * var(--font-size-ratio, 1.25) );
+    --font-size-1: calc( var(--font-size-2) * var(--font-size-ratio, 1.25) );
+    --font-size-0: calc( var(--font-size-1) * var(--font-size-ratio, 1.25) );
+}

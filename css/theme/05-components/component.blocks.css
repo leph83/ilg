@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------
+# BLOCKS
+--------------------------------------------------------------*/
+.block__content > *:not(:first-child) {
+    margin-top: calc(var(--gutter) * 2);
+}
+
+/* media object */
+.block.is-style-mediaobject {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+
+.block.is-style-mediaobject-reverse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+    direction: rtl
+}
+
+/* media object reverse */
+.block.is-style-mediaobject-reverse > * {
+    direction: ltr;
+}
+
+
+/* hero */
+.block.is-style-hero {
+    position: relative;
+    display: grid;
+    min-height: 100vh;
+}
+
+.block.is-style-hero > * {
+    grid-column: -1 / 1; 
+    grid-row: -1 / 1;
+}
+
+.block.is-style-hero .block__media {
+    position: relative;
+}
+
+.block.is-style-hero .block__media > figure  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.block.is-style-hero .block__media:after {
+    content: '';
+    background-color: rgba(0,0,0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.block.is-style-hero .block__content {
+    position: relative;
+    padding: calc(var(--gutter) * 5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc( var(--max-width) + var(--gutter) * 5 );
+    width: 100%;
+}
