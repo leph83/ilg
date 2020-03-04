@@ -1,3 +1,6 @@
 [submodule "css/phucstrap"]
 	path = css/phucstrap
 	url = https://github.com/leph83/phucstrap
+[submodule "phucstrap"]
+	path = phucstrap
+	url = https://github.com/leph83/phucstrap
