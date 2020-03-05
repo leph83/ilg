@@ -15,16 +15,21 @@
 .nav--primary {
     display: flex;
     flex-wrap: wrap;
-    margin-left: calc(var(--gutter) * -1);
-    margin-bottom: calc(var(--gutter) * -1);
+    margin-left: calc(var(--gutter) * -2);
+    margin-bottom: calc(var(--gutter) * -2);
 }
 
 /*--------------------------------------------------------------
 # NAV PRIMARY
 --------------------------------------------------------------*/
 .nav--primary .nav__item {
-    margin-left: var(--gutter);
-    margin-bottom: var(--gutter);
+    margin-left: calc(var(--gutter) * 2);
+    margin-bottom:  calc(var(--gutter) * 2);
+}
+
+.nav--primary .nav__link {
+    color: var(--color-white);
+    font-size: var(--font-size-8);
 }
 
 /*--------------------------------------------------------------

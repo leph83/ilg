@@ -130,11 +130,9 @@ add_action( 'after_setup_theme', 'mytheme_setup' );
  */
 function wtp_scripts() {
     wp_enqueue_style('wtp-theme-style', get_template_directory_uri().'/css/style.min.css', '', '2020-03');
-
-	
-	
 	wp_enqueue_script( 'wtp-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '2020-03', true );
 	
+	wp_enqueue_style('wtp-font', 'https://fonts.googleapis.com/css?family=Karla|Montserrat:300,700&display=swap', '', '2020-03');
 
 	// if (!is_user_logged_in()) {
 	// 	wp_enqueue_script( 'wtp-swup', get_template_directory_uri() . '/js/swup.min.js', array(), '2020-03', true );
