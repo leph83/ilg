@@ -14,7 +14,7 @@
 </main><!-- #content -->
 
 <footer class="footer  padding-top  padding-bottom">
-    <div class="footer__content  lc  lc--padding  ">
+    <div class="footer__content  lc  lc--2  lc--padding  ">
     	<div class="footer__item">
     		&copy;2020 - <?php bloginfo( 'name' ); ?>
     	</div>

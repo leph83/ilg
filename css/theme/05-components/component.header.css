@@ -5,8 +5,10 @@
   position: fixed;
   z-index: 10000;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
+  max-width: calc( var(--max-width) );
 
   background-color: var(--color-5);
 }

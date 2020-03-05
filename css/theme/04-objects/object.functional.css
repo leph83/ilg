@@ -10,7 +10,7 @@
 
 .lc--padding {
 	padding-left: var(--gutter);
-	padding-left: var(--gutter);
+	padding-right: var(--gutter);
 }
 
 .lc--2 {

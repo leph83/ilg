@@ -5,9 +5,9 @@
     --gutter: .8rem;
     --gutter-description: var(--font-size);
 
-    --max-width: 58em;
-    --max-width-2: 46em;
-    --max-width-3: 30em;
+    --max-width: 80em;
+    --max-width-2: 58em;
+    --max-width-3: 46em;
 }
 
 /*--------------------------------------------------------------
