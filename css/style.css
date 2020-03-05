@@ -83,8 +83,15 @@ html.is-animating .transition-fade {
 .section {
   display: grid;
   grid-gap: calc( var(--gutter) * 3 );
-  padding-top: calc(var(--gutter) * 3);
-  padding-bottom: calc(var(--gutter) * 3);
+  padding-top: calc(var(--gutter) * 2);
+  padding-bottom: calc(var(--gutter) * 2);
+}
+
+.section.lc {
+  padding-left: calc(var(--gutter) * 2);
+  padding-right: calc(var(--gutter) * 2);
+
+  max-width: calc(var(--max-width-2) - var(--gutter) * 4);
 }
 
 @media all and (min-width: 768px) {
