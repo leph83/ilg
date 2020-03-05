@@ -17,12 +17,14 @@
     --color-white: #fff;
     --color-black: #000;
 
-    --color-1: #ffdf00;
-    --color-2: #575756;
-    --color-3: #ededed;
+    --color-1: #f19225;
+    --color-2: #1178ac;
+    --color-3: #9d9d9c;
 
-    --color-4: #624096;
-    --color-5: #4da1ff;
+    --color-4: #A63446;
+    /* --color-5: #DBD3AD; */
+    --color-5: #211826;
+    
 }
 
 /*--------------------------------------------------------------
@@ -30,13 +32,21 @@
 --------------------------------------------------------------*/
 :root {
     /* Font Family */
-    --font-family: 'Hind', sans-serif;
-    --font-family-2: 'Open Sans', sans-serif;
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-2: 'Karla', sans-serif;
+
+    --font-family-h1: var(--font-family-2);
+    --font-family-h2: var(--font-family-2);
+    --font-family-h3: var(--font-family-2);
+    --font-family-h4: var(--font-family-2);
+    --font-family-h5: var(--font-family-2);
+    --font-family-h6: var(--font-family-2);
+
 
     /* Modular Scale */
     --font-size: calc(1.2rem + 0.698vw);
     --font-size-ratio: 1.25;
-    --line-height: 1.25;
+    --line-height: 1.33;
 
     /* Line Height */
     --line-height-0: var(--line-height);
