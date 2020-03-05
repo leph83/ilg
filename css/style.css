@@ -60,7 +60,9 @@ e.g hacks or ie11 styles
 
 
 body {
-	font-weight: 300;
+  font-weight: 300;
+  margin: 0 auto;
+  max-width: 2800px;
 }
 
 h1, h2, h3, h4, h5, h6 {
