@@ -87,7 +87,7 @@ html.is-animating .transition-fade {
   padding-bottom: calc(var(--gutter) * 2);
 }
 
-.section.lc {
+.section.lc--2 {
   padding-left: calc(var(--gutter) * 2);
   padding-right: calc(var(--gutter) * 2);
 
