@@ -80,6 +80,8 @@ if ( ! function_exists( 'wtp_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		add_theme_support('disable-custom-font-sizes');
 	}
 endif;
 add_action( 'after_setup_theme', 'wtp_setup' );
@@ -187,6 +189,10 @@ function wps_deregister_styles() {
     wp_dequeue_style( 'wp-block-library' );
 }
 add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
+
+
+
+
 
 
 /**
