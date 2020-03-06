@@ -1,24 +1,41 @@
-/* DEFAULT EDITOR SETTINGS */
-.edit-post-visual-editor .block-editor-block-list__block {
-    margin-left: initial;
-    margin-right: initial;
+@import url('theme/00-settings/settings.variables.css');
+
+.editor-inner-blocks.block-editor-inner-blocks {
+    padding: 1px 14px;
 }
+
+/* .editor-block-list__layout.block-editor-block-list__layout > * {
+    margin-top: var(--gutter);
+    border: 1px dotted rgba(0,0,0, .5);
+} */
 
 .wp-block {
-    max-width: none;
+    max-width: var(--max-width-3);
+}
+ 
+
+.wp-block[data-align="wide"] {
+    max-width: var(--max-width-2);
+}
+ 
+.wp-block[data-align="full"] {
+    max-width: var(--max-width);
+}
+ 
+.wp-block-cgb-block-wtp-plugin-block-section {
+    border: solid;
 }
 
 
-/* CUSTOM GUTENBERG STYLE */
 
-/* media object */
+
 .is-style-mediaobject.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
 }
 
-/* media object reverse */
+
 .is-style-mediaobject-reverse.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -26,13 +43,13 @@
     direction: rtl
 }
 
-/* media object reverse */
+
 .is-style-mediaobject-reverse.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout > * {
     direction: ltr;
 }
 
 
-/* hero */
+
 .is-style-hero.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
     display: grid;
 }
