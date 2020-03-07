@@ -1,61 +1,142 @@
 @import url('theme/00-settings/settings.variables.css');
+@import url('phucstrap/01-tools/tools.modularscale.css');
+@import url('phucstrap/02-generic/generic.normalize.css');
+@import url('phucstrap/02-generic/generic.custom.css');
 
-.editor-inner-blocks.block-editor-inner-blocks {
+@import url('phucstrap/04-objects/object.wp-admin.css');
+
+
+html {
+    font-size: 62.5%;
+}
+
+.has-child-selected .editor-inner-blocks.block-editor-inner-blocks {
     padding: 1px 14px;
 }
 
-/* .editor-block-list__layout.block-editor-block-list__layout > * {
-    margin-top: var(--gutter);
-    border: 1px dotted rgba(0,0,0, .5);
-} */
-
 .wp-block {
     max-width: var(--max-width-3);
+    /* border: 1px dotted red; */
 }
- 
 
-.wp-block[data-align="wide"] {
+.wp-block[data-align="wide"]  {
     max-width: var(--max-width-2);
 }
  
 .wp-block[data-align="full"] {
     max-width: var(--max-width);
 }
- 
-.wp-block-cgb-block-wtp-plugin-block-section {
-    border: solid;
+
+.wp-block[data-align="wide"] .wp-block,
+.wp-block[data-align="full"] .wp-block {
+    max-width: none;;
 }
 
 
 
 
-.is-style-mediaobject.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
+
+.block-editor-block-list__layout .block-editor-block-list__block[data-align=full] {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.components-placeholder__preview img {
+    margin: initial;
+}
+
+/* override hack for inline css */
+.components-resizable-box__container.components-resizable-box__container {
+    max-width: none !important;
+    max-height: none !important;
+    display: block;
+}
+
+
+/* remove margin when not selected */
+.editor-styles-wrapper [data-block] {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* reset to original setting */
+.editor-styles-wrapper .has-child-selected [data-block] {
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+
+
+.is-style-mediaobject.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
 }
 
-
-.is-style-mediaobject-reverse.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
+.is-style-mediaobject-reverse.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
     direction: rtl
 }
 
-
-.is-style-mediaobject-reverse.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout > * {
+.is-style-mediaobject-reverse.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout > * {
     direction: ltr;
 }
 
-
-
-.is-style-hero.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout {
+/* hero */
+.is-style-hero.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
+    position: relative;
     display: grid;
+    min-height: 100vh;
 }
 
-.is-style-hero.wp-block-cgb-block-wtp-plugin-block > .editor-inner-blocks > .editor-block-list__layout > * {
+.is-style-hero.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout > * {
     grid-column: -1 / 1;
     grid-row: -1 / 1;
+
+    /* override */
+    margin-left: initial;
+    margin-right: initial;
+}
+
+.is-style-hero.wp-block-wtp-block [data-type='wtp/block-content'] {
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.is-style-hero.wp-block-wtp-block [data-type='wtp/block-media'] img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;
+    
+    
+    max-width: none;
+    max-height: none;
+}
+
+.is-style-hero.wp-block-wtp-block .wp-block-wtp-block-content {
+    position: relative;
+    padding: calc(var(--gutter) * 5);
+
+    align-self: center;
+    justify-self: flex-end;
+
+    background-color: rgba(0,0,0, .25);
+
+    border: 1px solid rgba(0,0,0, .25);
+}
+
+/* section */
+.is-style-grid.wp-block-wtp-section > .editor-inner-blocks > .editor-block-list__layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: calc(var(--gutter) * 3);
 }
 

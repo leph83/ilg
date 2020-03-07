@@ -43,7 +43,8 @@
 
 
     /* Modular Scale */
-    --font-size: calc(1.2rem + 0.698vw);
+    /* --font-size: calc(1.2rem + 0.698vw); */
+    --font-size: calc(1.6rem);
     --font-size-ratio: 1.25;
     --line-height: 1.33;
 
