@@ -75,4 +75,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: calc(var(--gutter) * 3);
+
+    padding-top: calc(var(--gutter) * 9);
+    padding-bottom: calc(var(--gutter) * 9);
 }
