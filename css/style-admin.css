@@ -4,93 +4,11 @@
 @import url('phucstrap/02-generic/generic.custom.css');
 @import url('phucstrap/04-objects/object.wp-admin.css');
 
-/* columns has a margin bottom here */
-.wp-block-wtp-block {
-    margin-bottom: 28px;
-}
-
-/* .wp-block-wtp-block > .editor-inner-blocks { */
-[data-type="wtp/block"].is-selected > .block-editor-block-list__block-edit > [data-block] > div > .block-editor-inner-blocks {
-    padding: 14px 0;
-}
-
-.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
-    margin-left: 0;
-    margin-right: 0;
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout > [data-type] {
-    width: 100%;
-}
-
-.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout > [data-type] > .editor-block-list__block-edit {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout>[data-type] > .editor-block-list__block-edit > [data-block] {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-/* compensate appender margin of 14px */
-.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout > [data-type] > .editor-block-list__block-edit > div > div > .editor-inner-blocks {
-    /* margin-top: -14px;
-    margin-bottom: -14px; */
-}
-
-.wp-block-wtp-block .block-editor-block-list__block .block-list-appender {
-    margin: 0;
-}
-
-.wp-block-wtp-block .wp-block-wtp-block-media .editor-block-list__layout,
-.wp-block-wtp-block .wp-block-wtp-block-content .editor-block-list__layout {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-/* stupid thing to do */
-/* [data-type="wtp/block-media"] .block-list-appender,
-[data-type="wtp/block-content"] .block-list-appender {
-    margin-top: 28px;
-    margin-bottom: 28px;
-} */
-
-/* 
-.has-child-selected > .editor-block-list__block-edit > [data-block] > .wp-block-wtp-block > .editor-inner-blocks {
-    padding: 14px;
-}
-
-.wp-block-wtp-block .editor-block-list__layout {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-
-.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout > [data-type] {
-    padding-left: 0;
-    padding-right: 0;
-}
-
- .editor-block-list__block-edit > [data-block] {
-    margin-top: 0;
-    margin-bottom: 0;
-    display: flex;
-} */
-
-
-
-
-
-
 /* media object */
-/* .is-style-mediaobject.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
+.is-style-mediaobject.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    /* grid-gap: 3rem; */
 }
 
 
@@ -103,7 +21,7 @@
 
 .is-style-mediaobject-reverse.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout > * {
     direction: ltr;
-} */
+} 
 
 /* hero */
 .is-style-hero.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
