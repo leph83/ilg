@@ -1,8 +1,14 @@
 wp.domReady( () => {
     wp.blocks.registerBlockStyle( 'wtp/block', {
+        name: 'default',
+        label: 'Default',
+        isDefault: true,
+    } );
+
+    wp.blocks.registerBlockStyle( 'wtp/block', {
         name: 'hero',
         label: 'Hero',
-        isDefault: true,
+        isDefault: false,
     } );
 
     wp.blocks.registerBlockStyle( 'wtp/block', {

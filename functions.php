@@ -191,10 +191,6 @@ function wps_deregister_styles() {
 add_action( 'wp_print_styles', 'wps_deregister_styles', 100 );
 
 
-
-
-
-
 /**
  * LE WALKER
  * Custom Navigation Classes
