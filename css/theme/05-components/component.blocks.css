@@ -15,10 +15,6 @@
     padding-bottom: calc(var(--gutter) * 2);
 }
 
-.block.is-style-mediaobject-reverse {
-    direction: rtl
-}
-
 .block.is-style-mediaobject .block__media {
     position: relative;
     height: 100%;
@@ -26,11 +22,11 @@
 }
 
 .block.is-style-mediaobject .block__media img {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0; */
 
     width: 100%;
     height: 100%;
@@ -41,6 +37,15 @@
     padding-left: calc(var(--gutter) * 2);
     padding-right: calc(var(--gutter) * 2);
     margin-right: calc( 100% - var(--max-width-2) / 2 );
+}
+
+/* modifier */
+.block.is-style-mediaobject-reverse {
+    direction: rtl;
+}
+
+.block.is-style-mediaobject-reverse > * {
+    direction: ltr;
 }
 
 @media all and (min-width: 42em) {

@@ -5,17 +5,34 @@
 @import url('phucstrap/04-objects/object.wp-admin.css');
 
 /* media object */
-.is-style-mediaobject.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
+.is-style-mediaobject.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout
+, .is-style-mediaobject-reverse.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
     display: grid;
+    grid-gap: calc(var(--gutter) * 2);
+    padding-top: calc(var(--gutter) * 2);
+    padding-bottom: calc(var(--gutter) * 2);
+
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
+    align-items: center;
+}
+
+.is-style-mediaobject.wp-block-wtp-block [data-type='wtp/block-media'] figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 25%;    
+}
+
+.wp-block-wtp-block.is-style-mediaobject [data-type="wtp/block-content"] {
+    padding-top: calc(var(--gutter) * 2);
+    padding-bottom: calc(var(--gutter) * 2);
+    padding-left: 0;
+    padding-right: 0;
 }
 
 
+/* media ojbect reverse */
 .is-style-mediaobject-reverse.wp-block-wtp-block > .editor-inner-blocks > .editor-block-list__layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 3rem;
     direction: rtl
 }
 
