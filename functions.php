@@ -82,6 +82,10 @@ if ( ! function_exists( 'wtp_setup' ) ) :
 		) );
 
 		add_theme_support('disable-custom-font-sizes');
+
+		
+		add_theme_support( 'align-wide' );
+		  
 	}
 endif;
 add_action( 'after_setup_theme', 'wtp_setup' );
@@ -118,14 +122,6 @@ function wtp_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'wtp_widgets_init' );
-
-/**
- * Register support for Gutenberg wide images in your theme
- */
-function mytheme_setup() {
-  add_theme_support( 'align-wide' );
-}
-add_action( 'after_setup_theme', 'mytheme_setup' );
 
 /**
  * Enqueue scripts and styles.
@@ -302,14 +298,10 @@ add_filter('the_content', 'remove_empty_p', 20, 1);
  * Override Custom Gutenberg Styles
  */
 register_block_type(
-	'cgb/block-wtp-plugin-block', array(
-		// Enqueue blocks.style.build.css on both frontend & backend.
-		// 'style'         => 'wtp_plugin_block-cgb-style-css',
-		// Enqueue blocks.build.js in the editor only.
+	'wtp/wtp-block', array(
+		'style'         => 'wtp_plugin_block-cgb-style-css',
 		'editor_script' => 'wtp_plugin_block-cgb-block-js',
-		// Enqueue blocks.editor.build.css in the editor only.
 		'editor_style'  => 'wtp_plugin_block-cgb-block-editor-css',
-		// Render Callback
 		'render_callback' => 'wtp_render_callback',
 	)
 );

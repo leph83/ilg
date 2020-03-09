@@ -28,5 +28,11 @@ wp.domReady( () => {
         label: 'Grid',
         isDefault: false,
     } );
+
+    wp.blocks.registerBlockStyle( 'wtp/section', {
+        name: 'grid-3',
+        label: 'Grid 3',
+        isDefault: false,
+    } );
 } );
 

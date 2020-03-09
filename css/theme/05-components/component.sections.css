@@ -13,10 +13,40 @@
     max-width: calc(var(--max-width-2) + var(--gutter) * 4);
   }
   
+
+
+  .is-style-grid-3.section {
+    display: grid;
+    grid-gap: calc(var(--gutter) * 2);
+  }
+
   @media all and (min-width: 768px) {
     .is-style-grid.section {
       grid-template-columns: 1fr 1fr;
       padding-top: calc(var(--gutter) * 9);
       padding-bottom: calc(var(--gutter) * 9);
     }
+
+    .is-style-grid-3.section {
+      grid-gap: calc(var(--gutter) * 3);
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+
+  
+      margin-top: calc(var(--gutter) * 9);
+      margin-bottom: calc(var(--gutter) * 9);
+    }
   }
+
+
+
+.wp-block-quote {
+  margin: 0;
+}
+
+.wp-block-quote cite {
+  display: block;
+  font-style: normal;
+  margin-top: calc(var(--gutter) * 3);
+  font-family: var(--font-family-2);
+}

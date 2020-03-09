@@ -96,3 +96,9 @@
     padding-top: calc(var(--gutter) * 9);
     padding-bottom: calc(var(--gutter) * 9);
 }
+
+.is-style-grid-3.wp-block-wtp-section > .editor-inner-blocks > .editor-block-list__layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: calc(var(--gutter) * 3);
+}
